@@ -140,8 +140,8 @@ public class HistorialFragment extends Fragment {
                                     @Override
                                     public void run() {
                                         try {
-                                            GMailSender sender = new GMailSender("alerta.casablanca@gmail.com",
-                                                    "Portales187");
+                                            GMailSender sender = new GMailSender("EMAIL",
+                                                    "PASSWORD");
                                             for (int j = 0; j < dispositivos.size(); j++) {
                                                 historial.append(dispositivos.get(j).getNombre());
                                                 historial.append(": ");
@@ -173,7 +173,7 @@ public class HistorialFragment extends Fragment {
                                             progressDialog.dismiss();
                                             for (int x = 0; x < correos.size(); x++) {
                                                 sender.sendMail("Historial de dispositivos", "HISTORIAL: \n\n" + historial,
-                                                        "alerta.casablanca@gmail.com", correos.get(x));
+                                                        "EMAIL", correos.get(x));
                                             }
                                             historial.delete(0, historial.length());
 
