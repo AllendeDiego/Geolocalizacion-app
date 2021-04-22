@@ -9,9 +9,9 @@ public class Config {
 
     public static final String SHARED_NOTIFICATION= "notification";
 
-    public static final String SHARED_USER= "usuario";
+    public static final String SHARED_USER= "USUARIO";
 
-    public static final String SHARED_PASSWROD = "admi1234";
+    public static final String SHARED_PASSWROD = "PASSWORD";
 
 
     //We will use this to store the boolean in sharedpreference to track user is loggedin or not
