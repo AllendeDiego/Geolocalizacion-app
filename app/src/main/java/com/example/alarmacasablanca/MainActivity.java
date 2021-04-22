@@ -439,20 +439,20 @@ public class MainActivity extends AppCompatActivity {
                                         @Override
                                         public void run() {
                                             try {
-                                                GMailSender sender = new GMailSender("alerta.casablanca@gmail.com",
-                                                        "Portales187");
+                                                GMailSender sender = new GMailSender("EMAIL",
+                                                        "EMAIL_PASSWORD");
                                                     if (numeros_de_celular.size() == 1) {
                                                         for (int x = 0; x < correos.size(); x++) {
                                                             sender.sendMail("ALARMA: Caida de servicio", "Alarma ubicada en" + nombres + "\n " +
                                                                             "https://www.google.com/maps/place" + locaciones + "/@-33.3097213,-71.4629706,12z",
-                                                                    "alerta.casablanca@gmail.com", correos.get(x));
+                                                                    "EMAIL", correos.get(x));
                                                         }
                                                         numeros_de_celular.clear();
                                                     } else {
                                                         for (int x = 0; x < correos.size(); x++) {
                                                         sender.sendMail("ALARMA: Caida de servicio", "Alarma ubicada en" + nombres + "\n " +
                                                                         "https://www.google.com/maps/dir//" + locaciones + "//@-33.3097213,-71.4629706,12z",
-                                                                "alerta.casablanca@gmail.com", correos.get(x));
+                                                                "EMAIL", correos.get(x));
                                                     }
                                                         numeros_de_celular.clear();
                                                 }
