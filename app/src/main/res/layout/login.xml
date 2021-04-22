@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout_Login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradado">
+
+    <TextView
+        android:id="@+id/text_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="ADMINISTRADOR:"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_Login_Email"
+        android:layout_width="349dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Nombre de administrador"
+        android:inputType="textEmailAddress"
+        android:shadowColor="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#02054E"
+        android:textColorHint="#7CFFFFFF"
+        android:textColorLink="#3F51B5"
+        android:drawableStart="@drawable/icon_account"
+        android:drawablePadding="12dp"
+        android:background="@drawable/txt_edittext"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_Login" />
+
+    <Button
+        android:id="@+id/button_Login_Ingresar"
+        android:layout_width="178dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_cool"
+        android:backgroundTint="@drawable/txt_btn_cool"
+        android:text="Ingresar"
+        android:textColor="@drawable/txt_btn_coo2l"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Login_Password" />
+
+    <EditText
+        android:id="@+id/editText_Login_Password"
+        android:layout_width="349dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#02054E"
+        android:textColorHint="#7CFFFFFF"
+        android:drawableStart="@drawable/icon_lock"
+        android:drawablePadding="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/txt_edittext"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/button_Login_Ingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Login_Email"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

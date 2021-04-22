@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/gradado"
+        android:minWidth="380dp">
+
+        <TextView
+            android:id="@+id/textView_Nombre"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:minHeight="20dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textView_Comentarios"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_Celular"
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#DDC8C8"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView_Comentarios"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_textofallas" />
+
+        <TextView
+            android:id="@+id/textView_textofallas"
+            android:layout_width="78dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:text="N° de fallas:"
+            android:textColor="#DDC8C8"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textView_NumeroFallas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_Nombre" />
+
+        <TextView
+            android:id="@+id/textView_NumeroFallas"
+            android:layout_width="20dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="29dp"
+            android:textColor="#DDC8C8"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textView_Comentarios"
+            app:layout_constraintStart_toEndOf="@+id/textView_textofallas"
+            app:layout_constraintTop_toBottomOf="@+id/textView_Nombre" />
+
+        <TextView
+            android:id="@+id/textView_Comentarios"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/txt_comentarios"
+            android:minWidth="210dp"
+            android:minHeight="70dp"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView_Celular"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+

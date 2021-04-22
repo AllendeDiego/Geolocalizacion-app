@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/historial"
+    >
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="208dp"
+        android:layout_height="115dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="179dp"
+        android:background="#F44336"
+        android:padding="10dp"
+        android:text="Seleccionar sobre el rectangulo para agregar comentarios del dispositivo "
+        android:textAlignment="center"
+        android:textColor="#F1F1F1"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

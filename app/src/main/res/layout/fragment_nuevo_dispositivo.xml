@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout_NuevoDispositivo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradado">
+
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Nombre de la ubicación"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7CFFFFFF"
+        android:drawableStart="@drawable/icon_place"
+        android:drawablePadding="12dp"
+        android:background="@drawable/txt_edittext"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumero"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumero"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumero"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Ingrese celular: +56992005509"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#7CFFFFFF"
+        android:drawableStart="@drawable/icon_contact"
+        android:drawablePadding="12dp"
+        android:background="@drawable/txt_edittext"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/mapita"
+        app:layout_constraintEnd_toEndOf="@+id/mapita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/mapita"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+    <Button
+        android:id="@+id/button_NuevoDispositivo_agregar"
+        android:layout_width="168dp"
+        android:layout_height="49dp"
+        android:background="@drawable/btn_cool"
+        android:backgroundTint="@drawable/txt_btn_cool"
+        android:text="Agregar"
+        android:textColor="@drawable/txt_btn_coo2l"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapita" />
+
+    <fragment
+        android:id="@+id/mapita"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="377dp"
+        android:layout_height="386dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxHeight="400dp"
+        android:minHeight="300dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_NuevoDispositivo_agregar"
+        app:layout_constraintEnd_toEndOf="@+id/button_NuevoDispositivo_agregar"
+        app:layout_constraintStart_toStartOf="@+id/button_NuevoDispositivo_agregar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumero"
+        tools:context=".ui.Mapa.MapFragment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

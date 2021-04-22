@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Alarma Casablanca</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="title_activity_welcome">Tutorial</string>
+    <string name="next">Siguiente</string>
+    <string name="skip">Saltar</string>
+    <string name="start">Comenzar</string>
+
+
+
+</resources>

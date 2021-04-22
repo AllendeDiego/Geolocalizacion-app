@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "389574423667",
+    "firebase_url": "https://alarma-casablanca-24af9.firebaseio.com",
+    "project_id": "alarma-casablanca-24af9",
+    "storage_bucket": "alarma-casablanca-24af9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389574423667:android:fb4c357f507f506a732606",
+        "android_client_info": {
+          "package_name": "com.example.alarmacasablanca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389574423667-qju4949sohofq035uvcc2dfilsnshm07.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-HDKdJZX92bn2ZizGN761yIVQfPmL0M4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389574423667-qju4949sohofq035uvcc2dfilsnshm07.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

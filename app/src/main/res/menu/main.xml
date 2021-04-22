@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_AgregarDispositivo"
+        android:orderInCategory="100"
+        android:title="Agregar Dispositivo"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/nav_EliminarDispositivo"
+        android:orderInCategory="101"
+        android:title="Eliminar Dispositivo"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nav_AgregarCorreo"
+        android:orderInCategory="102"
+        android:title="Agregar Correo"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nav_EliminarCorreo"
+        android:orderInCategory="103"
+        android:title="Eliminar Correo"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nav_login"
+        android:orderInCategory="104"
+        android:title="Login"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/crearAdministrador"
+        android:orderInCategory="105"
+        android:title="Crear Nuevo Administrador"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nav_EliminarAdministrador"
+        android:orderInCategory="106"
+        android:title="Eliminar Administrador"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:orderInCategory="107"
+        android:title="Salir"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/tutorial"
+        android:orderInCategory="108"
+        android:title="Tutorial"
+        app:showAsAction="never" />
+</menu>

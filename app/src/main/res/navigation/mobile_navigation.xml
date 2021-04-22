@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_map">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.alarmacasablanca.ui.Historial.HistorialFragment"
+        android:label="Historial"
+        tools:layout="@layout/fragment_historial" >
+        <action
+            android:id="@+id/action_historialToMap"
+            app:destination="@id/nav_map"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_map" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.alarmacasablanca.ui.Correos.CorreoFragment"
+        android:label="Correos"
+        tools:layout="@layout/fragment_correo">
+    <action
+        android:id="@+id/action_correoToMap"
+        app:destination="@id/nav_map"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/nav_map" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_AgregarCorreo"
+        android:name="com.example.alarmacasablanca.ui.AgregarCorreo.AgregarCorreoFragment"
+        android:menuCategory="secondary"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_nuevo_correo" >
+        <action
+            android:id="@+id/action_agregarcorreoToMap"
+            app:destination="@id/nav_map"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_map" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_AgregarDispositivo"
+        android:name="com.example.alarmacasablanca.ui.AgregarEquipo.AgregarEventoFragment"
+        android:menuCategory="secondary"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_nuevo_dispositivo" >
+        <action
+            android:id="@+id/action_agregardispositivoToMap"
+            app:destination="@id/nav_map"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_map" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_EliminarCorreo"
+        android:name="com.example.alarmacasablanca.ui.EliminarCorreo.EliminarCorreoFragment"
+        android:menuCategory="secondary"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_eliminar_correo" >
+        <action
+            android:id="@+id/action_eliminarcorreoToMap"
+            app:destination="@id/nav_map"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_map" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_EliminarAdministrador"
+        android:name="com.example.alarmacasablanca.ui.EliminarAdministrador.EliminarAdministradorFragment"
+        android:menuCategory="secondary"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_eliminaradministrador" >
+        <action
+            android:id="@+id/action_nav_EliminarAdministrador_to_nav_map"
+            app:destination="@id/nav_map"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_map" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_EliminarDispositivo"
+        android:name="com.example.alarmacasablanca.ui.EliminarEquipo.EliminarDispositivo_Fragment"
+        android:menuCategory="secondary"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_eliminardispositivo" >
+        <action
+            android:id="@+id/action_eliminardispositivoToMap"
+            app:destination="@id/nav_map"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_map" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.alarmacasablanca.ui.Login.LoginFragment"
+        android:menuCategory="secondary"
+        android:label="@string/app_name"
+        tools:layout="@layout/login">
+        <action
+            android:id="@+id/action_loginToMap"
+            app:destination="@id/nav_map"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popUpTo="@id/nav_map" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.alarmacasablanca.ui.Mapa.MapFragment"
+        android:label="Mapa"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.alarmacasablanca.ui.Mapa.MapFragment"
+        android:label="Mapa"
+        tools:layout="@layout/fragment_map"/>
+    <fragment
+        android:id="@+id/crearAdministrador"
+        android:name="com.example.alarmacasablanca.ui.CrearAdministardor.CrearAdministrador"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_nuevo_usuario" >
+        <action
+            android:id="@+id/action_crearAdministradorToMap"
+            app:destination="@id/nav_map"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_map" />
+    </fragment>
+</navigation>
