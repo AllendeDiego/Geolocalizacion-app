@@ -19,9 +19,17 @@ to get the SMS and show in Google Maps where is ubicated the troubled transforme
 
 <table>
   <tr>
-    <td><img src=''></td>
-    <td><img src=''></td>
-    <td><img src=''></td>
-    <td><img src=''></td>
+    <td><img src='https://github.com/diegonlost/Geolocalizacion-app/blob/master/Screenshots/Add_admin.jpeg'></td>
+    <td><img src='https://github.com/diegonlost/Geolocalizacion-app/blob/master/Screenshots/Add_equipment.jpeg'></td>
+    <td><img src='https://github.com/diegonlost/Geolocalizacion-app/blob/master/Screenshots/Delete_equipment.jpeg'></td>
+    <td><img src='https://github.com/diegonlost/Geolocalizacion-app/blob/master/Screenshots/History.jpeg'></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td><img src='https://github.com/diegonlost/Geolocalizacion-app/blob/master/Screenshots/Mapa.jpg'></td>
+    <td><img src='https://github.com/diegonlost/Geolocalizacion-app/blob/master/Screenshots/Menu.jpg'></td>
+    <td><img src='https://github.com/diegonlost/Geolocalizacion-app/blob/master/Screenshots/New_email.jpeg'></td>
   </tr>
 </table>
