@@ -250,12 +250,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
                                     @Override
                                     public void run() {
                                         try {
-                                            GMailSender sender = new GMailSender("alerta.casablanca@gmail.com",
-                                                    "Portales187");
+                                            GMailSender sender = new GMailSender("EMAIL",
+                                                    "PASSWORD");
                                             for (int i = 0; i < correos.size(); i++) {
                                                 sender.sendMail("Restauración de servicio", "Restauración de servicio en " + nombre + "\n " +
                                                                 "https://www.google.com/maps/place/" + ubica1 + "," + ubica2,
-                                                        "alerta.casablanca@gmail.com", correos.get(i));
+                                                        "EMAIL", correos.get(i));
                                             }
                                         } catch (Exception e) {
                                         }
